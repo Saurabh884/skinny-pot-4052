@@ -25,5 +25,44 @@ const getJobData = ()=>(dispatch) =>{
     ((e)=>dispatch(getJobFailure()))
 }
 
+const sortAscending = (params)=> (dispatch)=> {
+    dispatch(getJobRequest());
 
-export {getJobRequest,getJobSuccess, getJobFailure, getJobData};
+    axios.get("http://localhost:8080/jobData", params).then
+    ((res)=>dispatch(getJobSuccess(res.data.sort(function(a,b){
+      return a.salary - b.salary
+    }))) ). catch((e)=>dispatch(getJobFailure()) )
+}
+
+const sortDescending = (params)=> (dispatch)=> {
+  dispatch(getJobRequest());
+
+  axios.get("http://localhost:8080/jobData", params).then
+  ((res)=>dispatch(getJobSuccess(res.data.sort(function(a,b){
+    return b.salary - a.salary
+  }))) ). catch((e)=>dispatch(getJobFailure()) )
+}
+const sortAscCity = (params)=> (dispatch)=> {
+    dispatch(getJobRequest());
+
+    axios.get("http://localhost:8080/jobData", params).then
+    ((res)=>dispatch(getJobSuccess(res.data.sort(function(a,b){
+        if(a.loc < b.loc) { return -1; }
+        if(a.loc > b.loc) { return 1; }
+      return 0
+    }))) ). catch((e)=>dispatch(getJobFailure()) )
+}
+
+const sortDesCity = (params)=> (dispatch)=> {
+  dispatch(getJobRequest());
+
+  axios.get("http://localhost:8080/jobData", params).then
+  ((res)=>dispatch(getJobSuccess(res.data.sort(function(a,b){
+    if(a.loc > b.loc) { return -1; }
+    if(a.loc < b.loc) { return 1; }
+      return 0
+  }))) ). catch((e)=>dispatch(getJobFailure()) )
+}
+
+
+export {getJobRequest,getJobSuccess, getJobFailure, getJobData , sortAscending, sortDescending, sortAscCity,sortDesCity };

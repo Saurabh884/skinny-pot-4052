@@ -10,14 +10,14 @@ import { getJobData } from '../Redux/AppReducer/action';
 const JobCard = ({elem}) => {
  
   return (
-    <div style={{width:"55%",boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px", height:"auto",border:"1px solid black",marginLeft:"400px"}}>
-        <div  style={{width:"95%",height:"400px",padding:"10px",  margin:"auto",textAlign:"left"}}>
+    <div style={{width:"75%",boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px", height:"auto",marginLeft:"100px"}}>
+        <div  style={{width:"95%", height:"400px",padding:"10px",  margin:"auto",textAlign:"left"}}>
               <h4  >{elem.medium}</h4>
               <p style={{color:"#6c54da"}} >{elem.company}</p>
               <div style={{display:"flex", justifyContent:"space-between"}}>
                    <p>  <MdLocationPin/>{elem.loc} </p> 
                    <p> <BsFillBriefcaseFill/> {elem.experience}  </p>
-                   <p><FaCoins/>{elem.salary} </p>
+                   <p><FaCoins/>{elem.salary} INR </p>
                 </div>
                 <p>Dear Candidates</p>
                 <p>We are hiring...</p>
