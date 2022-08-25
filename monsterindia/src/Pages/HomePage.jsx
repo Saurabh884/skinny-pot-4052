@@ -20,7 +20,7 @@ function HomePage() {
 
                             <div style={{margin:"20px 10px 0 "}}>
                                 <input style={{height:"40px",width:"440px",border:"1px solid black",margin:"15px 0 0 20px"}} type="text" placeholder=' 🔍 Search by Skills, Company & Job Title                                             🔊' />
-                                <button style={{height:"48px",width:"120px",backgroundColor:"#5c4da8",color:"white"}}>Search</button>
+                                <button style={{height:"40px",width:"120px",backgroundColor:"#5c4da8",color:"white"}}>Search</button>
                             </div>
 
                             <div style={{fontSize:"14px",margin:"20px 0 0 480px",cursor:"pointer"}}>Advanced Search</div>
@@ -58,6 +58,12 @@ function HomePage() {
                         </div>
                     </div>
                 </div>
+               
+
+
+
+
+
             </div>
 
         </>
