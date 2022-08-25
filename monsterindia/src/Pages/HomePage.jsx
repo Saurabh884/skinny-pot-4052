@@ -2,6 +2,7 @@ import "./HomePage.css";
 import HomeSlider1 from "../Slider/HomeSlider1";
 import HomeSlider2 from "../Slider/HomeSlider2";
 
+
 function HomePage() {
     
     return (
@@ -60,6 +61,7 @@ function HomePage() {
                     </div>
                 </div>
                
+
                 <HomeSlider1/>
 
                 <div style={{display:"flex"}}>
