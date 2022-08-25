@@ -1,4 +1,6 @@
 import "./HomePage.css";
+import HomeSlider1 from "../Slider/HomeSlider1";
+import HomeSlider2 from "../Slider/HomeSlider2";
 
 
 function HomePage() {
@@ -60,6 +62,21 @@ function HomePage() {
                 </div>
                
 
+                <HomeSlider1/>
+
+                <div style={{display:"flex"}}>
+                    <div>
+                        <div style={{display:"flex",gap:"30px",height:"120px",width:"900px",margin:"10px 0 0 140px",backgroundColor:"#f8e7af",boxShadow: "rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px"}}>
+                            <div><img style={{height:"110px", width:"200px",margin:"10px 0 0 0"}} src="https://media.monsterindia.com/trex/public/default/images/cs-banner-budge-1.png" alt="" /></div>
+                            <div style={{margin:"30px 0 0 0"}}>
+                                <div style={{fontSize:"20px",fontWeight:"bold"}}>What it feels like to have 48% more interview calls</div>
+                                <div>To get 5x more recruiter views on your profile</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <HomeSlider2/>
 
 
 
