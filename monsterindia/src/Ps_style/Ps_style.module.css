@@ -1,3 +1,37 @@
+.index{
+    font-size: 12px;
+    font-weight: bold;
+    color: gray;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.main_heading{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.heading{
+    font-size: 32px;
+    font-weight: bold;
+}
+.subHeading{
+    font-weight: bold;
+    color: #a7a7a7;
+}
+.headerContainer{
+    padding: 15px 50px 50px 50px;
+}
+.headerContainer p{
+    padding-top: 25px;
+    font-size: 18px;
+}
+.callButton{
+    width: 350px;
+}
+
+
+
 .serviceCard_Container{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -9,10 +43,10 @@
 .serviceCard{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    border: 1px solid #b9b9b9;
+    border: 1px solid #cbb5fa;
     border-radius: 8px;
     padding: 15px;
-    height:200px;
+    height:225px;
     width:500px;
     text-align: center;
 }
@@ -23,9 +57,12 @@ h2{
 }
 .cardHeading{
     color:#636162;
+    font-weight: bold;
+    font-size: 18px;
+
 }
 img{
-max-height : 170px;
+max-height : 195px;
 max-width: 235px;
 }
 .image{
@@ -36,4 +73,82 @@ max-width: 235px;
 }
 .cardText{
     padding-left: 15px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cardText p{
+    font-weight: bold;
+    color: #a7a7a7;
+    line-height: 22px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+.button_card{
+    font-weight: bold;
+    margin-top: 10px;
+}
+.benefits{
+    margin-top: 10px;
+}
+.benefits a{
+    color: #6448A1;
+}
+
+.contactForm{
+    display: grid;
+    grid-template-columns: .75fr 1.25fr;
+    padding: 35px 50px 35px 50px;
+    width: 1020px;
+    margin: auto;
+    background-color: #EFEDF6;
+    margin-top: 50px;
+}
+
+.staticContact:first-child{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(36, 36, 36);
+    text-align: center;
+    
+}
+
+.toll{
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(59, 59, 59);
+    text-align: center;
+}
+
+.contactImg{
+    padding-top: 50px;
+    padding-left: 70px;
+    padding-bottom: 50px;
+}
+
+.contact{
+    padding-left: 30px;
+}
+.contact h3{
+    font-size: 20px;
+    font-weight: bold;
+    color: #555555;
+}
+.contact h5{
+    font-size: 12px;
+    color:#575556;
+    padding-bottom: 30px;
+}
+
+.input{
+   background-color: white;
+   border: 1px solid #cbb5fa;
+   margin-bottom: 20px;
+}
+.formButton{
+    width: 200px;
+    margin-top: 10px;
+}
+.req{
+    color: tomato;
 }

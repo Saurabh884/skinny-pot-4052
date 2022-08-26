@@ -1,6 +1,6 @@
-import React from 'react'
-import Ps_button from './Ps_button'
-import styles from '../Ps_style/Ps_style.module.css'
+import React from 'react';
+import { Button, ButtonGroup } from '@chakra-ui/react';
+import styles from '../Ps_style/Ps_style.module.css';
 
 const Ps_service_card = ({id, heading, details, image_url, price}) => {
   
@@ -11,9 +11,9 @@ const Ps_service_card = ({id, heading, details, image_url, price}) => {
       </div>
       <div className={styles.cardText}>
           <h2 className={styles.cardHeading}>{heading}</h2>
-          <h2>{details}</h2>
-          <button>`Starting at ${price}`</button>
-          <h3><a href="">Benefits</a></h3>
+          <p>{details}</p>
+          <Button colorScheme='purple'>Starting at &nbsp; <span className={styles.botton_card}>{price}</span></Button>
+          <h6 className={styles.benefits}><a href="">Benefits</a></h6>
       </div>
     </div>
   )

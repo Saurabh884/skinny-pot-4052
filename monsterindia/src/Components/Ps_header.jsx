@@ -1,15 +1,23 @@
 import React from 'react'
-import Ps_button from './Ps_button'
+import { Button } from '@chakra-ui/react'
+import { MdCall } from "react-icons/md"
+import styles from '../Ps_style/Ps_style.module.css';
 
 const Ps_header = () => {
   return (
+    <>
     <div>
-        <div>
+      <p className={styles.index}>HOME &nbsp; &#62; &nbsp;PREMIUM SERVICES</p>
+    </div>
+    <div className={styles.headerContainer}>
+        <div className={styles.main_heading}>
             <div>
-            <h1>Buy Premium Services</h1>
-            <h2>Give your job search journey a boost</h2>
+            <h1 className={styles.heading}>Buy Premium Services</h1>
+            <h2 className={styles.subHeading}>Give your job search journey a boost</h2>
             </div>
-            <Ps_button/>
+            <div>
+            <Button className={styles.callButton} colorScheme='purple' leftIcon={<MdCall />}>Call me back</Button>
+            </div>
         </div>
         <p>Premium Services are paid services specially crafted for job seekers. 
             These services are offered by Monster to help the seekers get in 
@@ -18,6 +26,7 @@ const Ps_header = () => {
             them job-ready through Mock Interviews!
         </p>
     </div>
+    </>
   )
 }
 
