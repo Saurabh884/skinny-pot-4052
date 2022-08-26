@@ -15,8 +15,8 @@ const Ps_header = () => {
             <h1 className={styles.heading}>Buy Premium Services</h1>
             <h2 className={styles.subHeading}>Give your job search journey a boost</h2>
             </div>
-            <div>
-            <Button className={styles.callButton} colorScheme='purple' leftIcon={<MdCall />}>Call me back</Button>
+            <div className={styles.rightButton}>
+            <span ><Button className={styles.callButton} colorScheme='purple' leftIcon={<MdCall />}>Call me back</Button></span>
             </div>
         </div>
         <p>Premium Services are paid services specially crafted for job seekers. 

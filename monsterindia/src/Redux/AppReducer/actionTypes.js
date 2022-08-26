@@ -1,1 +1,2 @@
 export const GET_SERVICES_DATA = "GET_SERVICES_DATA";
+export const GET_JOBS_DATA = "GET_JOBS_DATA";

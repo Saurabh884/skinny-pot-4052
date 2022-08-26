@@ -1,7 +1,9 @@
 import { GET_SERVICES_DATA } from "./actionTypes";
+import { GET_JOBS_DATA } from "./actionTypes";
 
 const initialState = {
     servicesData: [],
+    jobsData:[],
     isLoading: false,
     isError: false,
   };
@@ -13,6 +15,13 @@ const initialState = {
         return{
           ...oldState,
           servicesData:[...payload]
+        }
+      }
+      case GET_JOBS_DATA:{
+        //console.log(payload)
+        return{
+          ...oldState,
+          jobsData:[...payload]
         }
       }
       default:{

@@ -2,16 +2,15 @@ import axios from 'axios';
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import Ps_header from '../Components/Ps_header';
-import Ps_service_card from '../Components/Ps_service_card';
+import Ps_service_card from '../Components/Ps_serviceCard';
 import { getAllServices } from '../Redux/AppReducer/action';
 import styles from '../Ps_style/Ps_style.module.css';
-import {
-  InputGroup,
-  FormLabel,
-  InputLeftAddon,
-  Button,
-} from '@chakra-ui/react'
-import { Input } from '@chakra-ui/react'
+import Ps_contact from '../Components/Ps_contact';
+import Ps_courses from '../Components/Ps_courses';
+import Ps_jobsSearch from '../Components/Ps_jobsSearch';
+import Footer from '../Components/Footer/Footer';
+
+
 
 const Premium_Services = () => {
 
@@ -28,10 +27,9 @@ const Premium_Services = () => {
     })
   }
 
+
   const services = useSelector(state=>state.AppReducer.servicesData);
-
-  console.log(services)
-
+  
   useEffect(()=>{
     getServicesData()
   }, [])
@@ -40,36 +38,13 @@ const Premium_Services = () => {
         <Ps_header/>
         <div className={styles.serviceCard_Container}>
           {
-            services.map(ele=>{return <Ps_service_card id={ele.id} heading={ele.heading} image_url={ele.image_url} details={ele.detail} price={ele.price} key={ele.id}/>})
+            services.map(ele=>{return <Ps_service_card key={ele.id} id={ele.id} heading={ele.heading} image_url={ele.image_url} details={ele.detail} price={ele.price}/>})
           }
         </div>
-        <div className={styles.contactForm}>
-              <div className={styles.staticContact}>
-                <h3>Talk to our expert</h3>
-                <div className={styles.contactImg}>
-                <img  src="https://media.monsterindia.com/trex/public/default/images/career-services/career-contactUs/humanFig2.svg" alt="contact image" />
-                </div>
-                <h3 className={styles.toll}>Toll Free No: 1-800-4196666</h3>
-                <h3 className={styles.toll}>Toll No: +91-40-66116611</h3>
-              </div>
-              <div className={styles.contact}>
-                <h3>CONTACT US</h3>
-                <h5>Our executive will get in touch with you soon</h5>
-                <FormLabel>Name &nbsp;<span className={styles.req}>*</span></FormLabel>
-                <Input className={styles.input} type='text' placeholder='Enter your full name' />
-                <FormLabel>Email Id &nbsp;<span className={styles.req}>*</span></FormLabel>
-                <Input className={styles.input} type='email' placeholder='Enter your email id'/>
-                <FormLabel>Mobile No &nbsp;<span className={styles.req}>*</span></FormLabel>
-                <InputGroup>
-                  <InputLeftAddon className={styles.input} children='+91' />
-                  <Input className={styles.input} type='tel' placeholder='Enter your phone number' />
-              </InputGroup>
-              <Button className={styles.formButton} colorScheme='purple'>Call me back</Button>
-              </div>
-        </div>
-        <div>
-          
-        </div>
+        <Ps_contact/>
+        <Ps_courses/>
+        <Ps_jobsSearch/>
+        <Footer/>
     </div>
   )
 }

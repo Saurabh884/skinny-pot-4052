@@ -82,5 +82,32 @@
       
       "Get a copy of the recorded interview to ensure you don't miss out on your assessment"]
     }
+  ],
+
+  "jobsSearch": [
+    {
+      "name":"Jobs by Locations",
+      "arr": ["Jobs in Bangalore", "Jobs in Delhi", "Jobs in Mumbai", "Jobs in Chennai", "Jobs in Hyderabad", "Jobs in Kolkata", "Jobs in Pune", "Jobs in Chandigarh", "Jobs in Lucknow", "Jobs in Coimbatore", "Jobs in Odisha", "Jobs in Jaipur", "Jobs in Ahmedabad", "Jobs in Indore", "Jobs in Nagpur", "Jobs in Goa", "Jobs in Noida", "Jobs in Bhubaneswar", "Jobs in Gurgaon", "Jobs in Guwahati", "Jobs in Dehradun", "Jobs in Mysore", "Jobs in Bhopal", "Jobs in Vijayawada"]
+    },
+    {
+      "name":"Jobs by Skill - IT",
+      "arr": ["Biotechnology Jobs", "Digital Marketing Jobs", "Graphic Design Jobs", "Networking Jobs", "Oracle Jobs", "SEO Jobs", "Software Testing Jobs", "Sql JobsWeb Design"]
+    },
+    {
+      "name":"Jobs by Skill Non IT",
+      "arr":["Accounting Jobs", "BPO Jobs", "Call Center Jobs", "Civil Engineering Jobs", "Content Writing Jobs", "Electrical Engineering Jobs", "Event Management Jobs", "Hotel Management Jobs", "HR Jobs", "Sales Jobs"]
+    },
+    {
+      "name":"Jobs by Role",
+      "arr":["Air Hostess Jobs", "Accountant Jobs", "Assistant Professor Jobs", "Business Analyst Jobs", "Computer Operator jobs", "Data Analyst Jobs", "Data Entry Operator Jobs", "Fashion Designer Jobs", "Graphics Designer jobs", "Software Engineer Jobs"]
+    },
+    {
+      "name":"International Jobs",
+      "arr":["Jobs in Gulf", "Jobs in Singapore", "Jobs in Malaysia", "Jobs in Philippines", "Jobs in Hong Kong", "Jobs in Vietnam", "Jobs in Indonesia", "Jobs in Thailand", "Jobs in Dubai", "Jobs in UAE"]
+    },
+    {
+      "name":"Other Jobs",
+      "arr":["Walk-in Jobs", "Part Time Jobs", "Contract Jobs", "Jobs for Women", "Fresher Jobs", "Freelancer Jobs", "Work from Home Jobs", "12th Pass Jobs", "10th Pass Jobs", "Diploma Jobs"]
+    }
   ]
 }

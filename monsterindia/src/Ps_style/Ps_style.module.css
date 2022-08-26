@@ -3,12 +3,13 @@
     font-weight: bold;
     color: gray;
     margin-left: 50px;
-    margin-top: 20px;
+    padding-top: 30px;
+    border-top: 1px solid rgb(228, 228, 228);
 }
 
 .main_heading{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2.5fr 1fr;
 }
 
 .heading{
@@ -26,8 +27,12 @@
     padding-top: 25px;
     font-size: 18px;
 }
+.rightBotton{
+    text-align: right;
+}
 .callButton{
     width: 350px;
+    display: inline;
 }
 
 
@@ -141,9 +146,9 @@ max-width: 235px;
 }
 
 .input{
-   background-color: white;
-   border: 1px solid #cbb5fa;
-   margin-bottom: 20px;
+    background-color: white;
+    border: 1px solid #cbb5fa;
+    margin-bottom: 20px;
 }
 .formButton{
     width: 200px;
@@ -151,4 +156,84 @@ max-width: 235px;
 }
 .req{
     color: tomato;
+}
+
+.onlineCources{
+    width:1020px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 320px;
+}
+.courseImage{
+    background-color: #F5F8FC;
+    height: 100%;
+    padding-left: 50px;
+    padding-top: 70px;
+}
+.courseImage img{
+    width:auto;
+    height: 170px;
+}
+.courseText{
+    padding-left: 30px;
+}
+.courseImgContainer{
+    margin-bottom: 25px;
+}
+.courseText img{
+    width: auto;
+    height: 20px;
+}
+.courseText h3{
+    color: #555555;
+}
+.courseContainer{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    color: #6448A1;
+    font-size: 18px;
+}
+.courseContainer img{
+    height: 14px;
+}
+
+.cap{
+    display: inline;
+}
+.courseName{
+    padding-top: 16px;
+}
+.viewAllCourses{
+    text-align: right;
+    padding-top: 30px;
+}
+.viewAllCourses a{
+    border-bottom: 2px solid #6448A1;
+}
+
+/* -----------  Search -------------*/
+
+.jobSearchContainer{
+    width: 1100px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.searchBlock{
+    display: grid;
+    grid-template-columns: .4fr .03fr 2fr;
+}
+.item{
+    font-size: 13px;
+    color: #494949;
+}
+.item:hover{
+    color: #6448A1;
+}
+.searchName{
+    font-size: 13px;
+    color:#6448A1
 }
