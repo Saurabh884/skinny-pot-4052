@@ -1,9 +1,8 @@
 
 import React from 'react';
 import {Text, Box, IconButton, useBreakpointValue } from '@chakra-ui/react';
-import { ChevronLeftIcon, ChevronRightIcon } from '@chakra-ui/icons';
 import Slider from 'react-slick';
-
+import { ChevronLeftIcon, ChevronRightIcon } from '@chakra-ui/icons';
 
 // Slider
 
@@ -14,8 +13,8 @@ const settings = {
     infinite: false,
 };
 
-export default function HomeSlider2() {
-
+export default function HomeSlider3() {
+ 
   const [slider, setSlider] = React.useState(1)
 
   const top = useBreakpointValue({ base: '90%', md: '50%' });
@@ -30,7 +29,7 @@ export default function HomeSlider2() {
         "image" : "https://media.monsterindia.com/trex/prod-cdn/media/promotedemployer/2022/january/Vt3mzVSvBb6NkFhELbk0NzIv3sSmcRm9LFUGC4rG.jpeg",
         "mkt" : "Customer support Exwcutive ",
         "price" : "Experience: 0-5 years",
-        "mrp" : "location: Hyderabad"
+        "mrp" : "location: Hyderabad/Bangalore"
     },
     {
         "id" : 2,
@@ -54,7 +53,7 @@ export default function HomeSlider2() {
         "image" : "https://media.monsterindia.com/trex/prod-cdn/media/promotedemployer/2022/january/Vt3mzVSvBb6NkFhELbk0NzIv3sSmcRm9LFUGC4rG.jpeg",
         "mkt" : "Customer support Exwcutive ",
         "price" : "Experience: 0-5 years",
-        "mrp" : "location: Hyderabad"
+        "mrp" : "location: Hyderabad/Bangalore"
     },
     {
         "id" : 5,
@@ -79,7 +78,7 @@ export default function HomeSlider2() {
         "image" : "https://media.monsterindia.com/trex/prod-cdn/media/promotedemployer/2022/january/Vt3mzVSvBb6NkFhELbk0NzIv3sSmcRm9LFUGC4rG.jpeg",
         "mkt" : "Customer support Exwcutive ",
         "price" : "Experience: 0-5 years",
-        "mrp" : "location: Hyderabad"
+        "mrp" : "location: Hyderabad/Bangalore"
     },
 
     {
@@ -104,7 +103,7 @@ export default function HomeSlider2() {
         "image" : "https://media.monsterindia.com/trex/prod-cdn/media/promotedemployer/2022/january/Vt3mzVSvBb6NkFhELbk0NzIv3sSmcRm9LFUGC4rG.jpeg",
         "mkt" : "Customer support Exwcutive ",
         "price" : "Experience: 0-5 years",
-        "mrp" : "location: Hyderabad"
+        "mrp" : "location: Hyderabad/Bangalore"
     },
     
     
@@ -113,10 +112,9 @@ export default function HomeSlider2() {
  
 
   return (
-
-    <div style={{height:"170px",width:"900px",marginLeft:"140px",backgroundColor:"white",boxShadow: "rgba(0, 0, 0, 0.16) 0px 1px 4px"}
+    <div style={{margin:"100px 0 0 140px",height:"170px",width:"900px",marginLeft:"140px",backgroundColor:"white",boxShadow: "rgba(0, 0, 0, 0.16) 0px 1px 4px"}
     }>
-    <h1 style={{fontSize:"24px",fontWeight:"bold",marginTop:"30px",padding:"20px 0 0 30px"}}>Work From Home Jobs</h1>
+    <h1 style={{fontSize:"24px",fontWeight:"bold",marginTop:"30px",padding:"20px 0 0 30px"}}>Recent Jobs</h1>
     <Box
       position={'relative'}
       height={'auto'}
@@ -136,48 +134,46 @@ export default function HomeSlider2() {
         type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
       />
+         {/* Left Icon */}
+            <IconButton
+                marginTop={'0px'}
+                aria-label="left-arrow"
+                color="black"
+                colorScheme="white"
+                boxShadow= "rgba(0, 0, 0, 0.35) 0px 5px 15px"
+                borderRadius="full"
+                position="absolute"
+                left={side}
+                top={top}
+                transform={'translate(0%, -50%)'}
+                zIndex={2}
+                onClick={() => slider?.slickPrev()}>
+                <ChevronLeftIcon/>
+                </IconButton>
 
-      {/* Left Icon */}
-         <IconButton
-            marginTop={'0px'}
-            aria-label="left-arrow"
-            color="black"
-            colorScheme="white"
-            boxShadow= "rgba(0, 0, 0, 0.35) 0px 5px 15px"
-            borderRadius="full"
-            position="absolute"
-            left={side}
-            top={top}
-            transform={'translate(0%, -50%)'}
-            zIndex={2}
-            onClick={() => slider?.slickPrev()}>
-            <ChevronLeftIcon/>
-        </IconButton>
+         {/* Right Icon */}
+            <IconButton
+                marginTop={'0px'}
+                aria-label="right-arrow"
+                color="black"
+                colorScheme="white"
+                boxShadow= "rgba(0, 0, 0, 0.35) 0px 5px 15px"
+                borderRadius="full"
+                position="absolute"
+                right={side}
+                top={top}
+                transform={'translate(0%, -50%)'}
+                zIndex={2}
+                onClick={() => slider?.slickNext()}>
+                <ChevronRightIcon/>
+            </IconButton>
 
-      {/* Right Icon */}
-        <IconButton
-            marginTop={'0px'}
-            aria-label="right-arrow"
-            color="black"
-            colorScheme="white"
-            boxShadow= "rgba(0, 0, 0, 0.35) 0px 5px 15px"
-            borderRadius="full"
-            position="absolute"
-            right={side}
-            top={top}
-            transform={'translate(0%, -50%)'}
-            zIndex={2}
-            onClick={() => slider?.slickNext()}>
-            <ChevronRightIcon/>
-        </IconButton>
-
-      {/* Slider */}
-      <Slider {...settings} ref={(slider) => setSlider(slider)}>
-        {cards.map((url,index) => (
-          <Box
+         {/* Slider */} 
+        <Slider {...settings} ref={(slider) => setSlider(slider)}>
+            {cards.map((url,index) => (
+            <Box
                 display={"flex"}
-                ml={index > 0 ? "30px" :"30px"}
-                mr={10}
+                pl={index > 0 ? "30px" :"30px"}
                 marginTop={8}
                 key={index}
                 height={'150px'}
@@ -185,18 +181,19 @@ export default function HomeSlider2() {
                 position="relative"
                 backgroundPosition="center"
                 backgroundRepeat="no-repeat"
-                backgroundSize="cover"  
-          >
-                <Box  fontSize='sm'  rounded={5} p={5} bg={'rgb(245,245,245)'} width={'240px'} height={'auto'}>
+                backgroundSize="cover"
+        
+            >
+                <Box  fontSize='sm' rounded={5} p={5} bg={'rgb(245,245,245)'} width={'240px'} height={'auto'}> 
                     <Text color={'black'} fontWeight={500}>{url.name}</Text>
                     <Text style={{color:"#6F7284",fontWeight:"500px"}}>{url.mkt}  </Text>
                     <Text style={{color:"#EF4281"}}>{url.price}</Text>
-                    <Text color={'#717486'} >{url.mrp}</Text> 
+                    <Text color={'#717486'} >{url.mrp}</Text>    
                 </Box>
-           
-          </Box>
-        ))}
-      </Slider>
+            
+            </Box>
+            ))}
+        </Slider>
     </Box>
     </div>
   );

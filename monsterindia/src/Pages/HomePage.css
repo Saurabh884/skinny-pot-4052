@@ -18,6 +18,7 @@
 
 .home-container{
     background-color: rgb(245,245,245);
+    margin-bottom: 50px;
 }
 
 .home-main1{
@@ -59,4 +60,50 @@
     width: 230px;
     background-color: white;
     border: 1px solid grey;
+}
+
+.vacancyjob{
+    display: flex;
+    gap: 35px;
+    margin: 20px 40px 0 40px;
+    
+}
+.vacancyjob>div{
+    color: black;
+    width: 12%;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.vacancyjob>div:hover{
+    border-bottom: 1px solid blue;;
+}
+
+.vacancyjob1{
+    display: flex;
+    gap: 50px;
+    margin: 20px 50px 0 80px;
+}
+
+.vacancyjob1>div>div{
+    margin: 15px 0 0 0 ;
+}
+
+.vacancyjob1>div>div:hover{
+    border-bottom: 1px solid blue;
+    width: fit-content;
+}
+
+.jobby{
+    margin: 20px 0 0 0;
+    background: white;
+    padding-left: 20px;
+    line-height: 2;
+}
+
+.jobby>p:hover{
+    border-bottom: 1px solid blue;
+    cursor: pointer;
+    width:fit-content;
 }

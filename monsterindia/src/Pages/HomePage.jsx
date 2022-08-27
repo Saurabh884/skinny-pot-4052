@@ -1,6 +1,8 @@
 import "./HomePage.css";
 import HomeSlider1 from "../Slider/HomeSlider1";
 import HomeSlider2 from "../Slider/HomeSlider2";
+import HomeSlider3 from '../Slider/HomeSlider3'; 
+
 
 
 function HomePage() {
@@ -64,7 +66,8 @@ function HomePage() {
 
                 <HomeSlider1/>
 
-                <div style={{display:"flex"}}>
+                <div style={{display:"flex",gap:"20px"}}>
+
                     <div>
                         <div style={{display:"flex",gap:"30px",height:"120px",width:"900px",margin:"10px 0 0 140px",backgroundColor:"#f8e7af",boxShadow: "rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px"}}>
                             <div><img style={{height:"110px", width:"200px",margin:"10px 0 0 0"}} src="https://media.monsterindia.com/trex/public/default/images/cs-banner-budge-1.png" alt="" /></div>
@@ -73,10 +76,121 @@ function HomePage() {
                                 <div>To get 5x more recruiter views on your profile</div>
                             </div>
                         </div>
+
+                        <HomeSlider2/>
+                        <HomeSlider3/>
+
+
+
+                     <div style={{margin:"90px 0 0 140px",width:"900px",height:"350px",backgroundColor:"white"}}>
+                        <div style={{margin:"30px 0 0 30px",fontSize:"20px",fontWeight:"bold",paddingTop:"30px"}}>Premium Services</div>
+                        <div style={{display:"flex",gap:"15px",margin:"30px 0 0 30px"}}>
+                            <div style={{height:"220px",width:"200px",backgroundColor:"rgb(249,253,248)"}}>
+                                <div style={{width:"200px",height:"100px",backgroundColor:"rgb(239,248,236)"}}><img style={{width:"70px",height:"100px",marginLeft:"60px"}} src="https://media.monsterindia.com/trex/prod-cdn/media/product/2021/august/aJ98j6upmWI4DEMecdM4NTPzesMybGMNVQBA3Xod.png" alt="" /></div>
+                                <div style={{fontWeight:"bold",fontSize:"14px",margin:"10px 0 0 20px"}}>Resume Writing</div>
+                                <div style={{fontSize:"13px",margin:"0px 40px 0 20px"}}>Professionally written resume + cover letter</div>
+                                <div style={{color:"blue",margin:"13px 0 0 80px",cursor:"pointer"}}>->Read More</div>
+                            </div>
+
+                            <div style={{height:"220px",width:"200px",backgroundColor:"rgb(249,253,248)"}}>
+                                <div style={{width:"200px",height:"100px",backgroundColor:"rgb(239,248,236)"}}><img style={{width:"70px",height:"100px",marginLeft:"60px"}} src="https://media.monsterindia.com/trex/prod-cdn/media/product/2021/august/Xra3gEbEDCZChclt6KyeY08aT14mQIemY87tp56k.png" alt="" /></div>
+                                <div style={{fontWeight:"bold",fontSize:"14px",margin:"10px 0 0 20px"}}>Featured Profile</div>
+                                <div style={{fontSize:"13px",margin:"0px 40px 0 20px"}}>Better your chances of getting shortlisted</div>
+                                <div style={{color:"blue",margin:"13px 0 0 80px",cursor:"pointer"}}>->Read More</div>
+                            </div>
+
+                            <div style={{height:"220px",width:"200px",backgroundColor:"rgb(249,253,248)"}}>
+                                <div style={{width:"200px",height:"100px",backgroundColor:"rgb(239,248,236)"}}><img style={{width:"70px",height:"100px",marginLeft:"60px"}} src="https://media.monsterindia.com/trex/prod-cdn/media/product/2021/august/K109Ubc6KIVisXQSRJaQhTSXJpOAkU0UUA2dpe7R.png" alt="" /></div>
+                                <div style={{fontWeight:"bold",fontSize:"14px",margin:"10px 0 0 20px"}}>Profile Highlighter</div>
+                                <div style={{fontSize:"13px",margin:"0px 40px 0 20px"}}>Grab the attention of employers</div>
+                                <div style={{color:"blue",margin:"13px 0 0 80px",cursor:"pointer"}}>->Read More</div>
+                            </div>
+
+                            <div style={{height:"220px",width:"200px",backgroundColor:"rgb(249,253,248)"}}>
+                                <div style={{width:"200px",height:"100px",backgroundColor:"rgb(239,248,236)"}}><img style={{width:"70px",height:"100px",marginLeft:"60px"}} src="https://media.monsterindia.com/trex/prod-cdn/media/product/2021/august/UWwaneAf2OBhqcauh7PujGU5mIavChpFlRnZabZp.png" alt="" /></div>
+                                <div style={{fontWeight:"bold",fontSize:"14px",margin:"10px 0 0 20px"}}>Career Booster</div>
+                                <div style={{fontSize:"13px",margin:"0px 40px 0 20px"}}>Get power and speed up your job search</div>
+                                <div style={{color:"blue",margin:"13px 0 0 80px",cursor:"pointer"}}>->Read More</div>
+                            </div>
+                        </div>
+                     </div>
+
+
+                    
+
+                     <div style={{backgroundColor:"white",height:"380px",margin:"20px 0 0 140px",width:"900px"}}>
+                        <div style={{margin:"20px 0 0 30px",padding:"30px 0 15px 0",fontSize:"22px",fontWeight:"bold"}}>Find Job By Vacancies</div>
+                        <div className="vacancyjob">
+
+                            <div style={{backgroundColor:"rgb(92,77,167)",color:"white"}}>Skill</div>
+                            <div>Location</div>
+                            <div>Industry</div>
+                            <div>Function</div>
+                            <div>Roles</div>
+                            <div>Company</div>
+                        </div>
+
+                        <div className="vacancyjob1">
+                            <div>
+                                <div>Sales</div>
+                                <div>Java </div>
+                                <div>Jio Customer Associate<br></br> Freelancer </div>
+                                <div>Jio Customer Associate<br></br> Freelancer </div>
+                            </div>
+                            <div>
+                                <div>Operations</div>
+                                <div>Software Eng </div>
+                                <div>Sql</div>
+                                <div>Javascript</div>
+                                <div>Python</div>
+                            </div>
+                            <div>
+                                <div>Customer Service</div>
+                                <div>Good Communication</div>
+                                <div>Lead Generation</div>
+                                <div>HTML</div>
+                                <div>CSS</div>
+                            </div>
+                            <div>
+                                <div>Voice Process</div>
+                                <div>Problem Solver</div>
+                                <div>Bpo</div>
+                                <div>Marketing</div>
+                                <div>Customer Support</div>
+                            </div>
+                        </div>
+                     </div>
+
+                     <div><img style={{margin:"20px 0 0 190px"}} src="https://tpc.googlesyndication.com/simgad/1057082815438327185" alt="" /></div>
+            
+           
                     </div>
+
+                
+                    <div>
+                        <div style={{margin:"20px 0 0 80px"}}><img src="https://tpc.googlesyndication.com/simgad/5340510285791842779" alt="" /></div>
+
+                        <div className="jobby">
+                            <h1 style={{fontSize:"20px",fontWeight:"bold"}}>Jobs by Top Skills</h1>
+                            <hr></hr>
+                            <p>Accounting Jobs</p>
+                            <p>Analytics Jobs</p>
+                            <p>Animation Jobs</p>
+                            <p>Architecture Jobs</p>
+                            <p>Banking Jobs</p>
+                            <p>BPO Jobs</p>
+                            <p>Data Science Jobs</p>
+                            <p>Java Jobs</p>
+                            <p>Marketing Jobs</p>
+                            <p>Networking Jobs</p>
+                            <p>UX/UI Jobs</p>
+                        </div>
+                        <div style={{margin:"20px 0 0 0"}}><img src="https://tpc.googlesyndication.com/simgad/11380897855822522918" alt="" /></div>
+                    </div>
+
                 </div>
 
-                <HomeSlider2/>
+
 
 
 
