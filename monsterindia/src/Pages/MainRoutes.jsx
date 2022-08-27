@@ -1,14 +1,11 @@
-import React from "react";
-import { Route, Routes } from "react-router-dom";
-import {Login} from "./Login";
+import React from 'react'
 
 const MainRoutes = () => {
   return (
-    <Routes>
-      <Route path="/login" element={<Login />} />
-      {/* <Route path="/signup" element={<Signup />} /> */}
-    </Routes>
-  );
-};
+    <div>
+      
+    </div>
+  )
+}
 
-export default MainRoutes;
+export default MainRoutes
