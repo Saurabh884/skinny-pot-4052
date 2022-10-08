@@ -247,3 +247,7 @@ max-width: 235px;
 .modal{
     width: 500px;
 }
+.new_text{
+    font-size: large;
+    color:red
+}
